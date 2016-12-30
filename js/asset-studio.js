@@ -2508,8 +2508,6 @@ imagelib.drawing.fx = function(effects, dstCtx, src, size) {
     padBottom = Math.max(padBottom, (innerEffects[i].blur || 0) + Math.max(0, -translate.y || 0));
   }
 
-  alert(padLeft);
-
   paddedSize = {
     w: size.w + padLeft + padRight,
     h: size.h + padTop + padBottom
@@ -3980,15 +3978,6 @@ studio.forms.ImageField = studio.forms.Field.extend({
 
       var padPx = Math.round(((me.spaceFormValues_['pad'] || 0) + extraPadding) *
                   Math.min(trimRect.w, trimRect.h));
-
-	
-	/*alert("Changing padpx from:" + padPx + " to " + (padPx / 2));
-	padPx /= 2;*/
-
-	alert("Changing trimRect.w from:" + trimRect.w + " to " + (trimRect.w + 4));
-	trimRect.w += 4;
-	trimRect.h += 4;
-
       var targetRect = { x: padPx, y: padPx, w: trimRect.w, h: trimRect.h };
 
       var outCtx = imagelib.drawing.context({

@@ -217,11 +217,12 @@
                    mult);
 
 			//alert("Test1" + iconSize.w + ";" + targetRect.w);
-
-			targetRect.x -= 2;
-			targetRect.y -= 2;
-			targetRect.w += 4;
-			targetRect.h += 4;
+			if (iconSize.w == 48) {
+				targetRect.x -= 1;
+				targetRect.y -= 1;
+				targetRect.w += 2;
+				targetRect.h += 2;
+			}
 
             var outCtx = imagelib.drawing.context(iconSize);
             var tmpCtx = imagelib.drawing.context(iconSize);
