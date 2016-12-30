@@ -3980,8 +3980,12 @@ studio.forms.ImageField = studio.forms.Field.extend({
                   Math.min(trimRect.w, trimRect.h));
 
 	
-	alert("Changing padpx from:" + padPx + " to " + (padPx / 2));
-	padPx /= 2;
+	/*alert("Changing padpx from:" + padPx + " to " + (padPx / 2));
+	padPx /= 2;*/
+
+	alert("Changing trimRect.w from:" + trimRect.w + " to " + (trimRect.w + 4));
+	trimRect.w += 4;
+	trimRect.h += 4;
 
       var targetRect = { x: padPx, y: padPx, w: trimRect.w, h: trimRect.h };
 
