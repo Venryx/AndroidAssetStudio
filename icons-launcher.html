@@ -217,12 +217,12 @@
                    mult);
 
 			//alert("Test1" + iconSize.w + ";" + targetRect.w);
-			if (iconSize.w == 48) {
-				targetRect.x -= 1;
-				targetRect.y -= 1;
-				targetRect.w += 2;
-				targetRect.h += 2;
-			}
+			var paddingReduceAmountOnEachSide_percent = .0208333333;
+			var paddingReduceAmountOnEachSide = Math.round(paddingReduceAmountOnEachSide_percent * iconSize.w);
+			targetRect.x -= paddingReduceAmountOnEachSide;
+			targetRect.y -= paddingReduceAmountOnEachSide;
+			targetRect.w += paddingReduceAmountOnEachSide * 2;
+			targetRect.h += paddingReduceAmountOnEachSide * 2;
 
             var outCtx = imagelib.drawing.context(iconSize);
             var tmpCtx = imagelib.drawing.context(iconSize);
