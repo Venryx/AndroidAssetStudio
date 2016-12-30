@@ -216,7 +216,12 @@
                 || studio.util.multRound(PARAM_RESOURCES['mdpi-' + backgroundShape + '-targetRect'],
                    mult);
 
-			alert("Test1" + iconSize.w + ";" + targetRect.w);
+			//alert("Test1" + iconSize.w + ";" + targetRect.w);
+
+			targetRect.x -= 2;
+			targetRect.y -= 2;
+			targetRect.w += 4;
+			targetRect.h += 4;
 
             var outCtx = imagelib.drawing.context(iconSize);
             var tmpCtx = imagelib.drawing.context(iconSize);
