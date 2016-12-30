@@ -2508,6 +2508,8 @@ imagelib.drawing.fx = function(effects, dstCtx, src, size) {
     padBottom = Math.max(padBottom, (innerEffects[i].blur || 0) + Math.max(0, -translate.y || 0));
   }
 
+  alert(padLeft);
+
   paddedSize = {
     w: size.w + padLeft + padRight,
     h: size.h + padTop + padBottom
