@@ -339,6 +339,8 @@
                   h: foreCtx.canvas.height
                 };
 
+				alert("ForeSize:" + foreSize)
+
                 if (values['foreColor'].alpha) {
                   var tmpCtx3 = imagelib.drawing.context(foreSize);
                   imagelib.drawing.copy(tmpCtx3, foreCtx, foreSize);
