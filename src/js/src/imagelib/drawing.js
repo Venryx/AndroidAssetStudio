@@ -354,6 +354,8 @@ imagelib.drawing.fx = function(effects, dstCtx, src, size) {
   }
   padTop = padRight = padBottom = padLeft;
 
+  alert(padTop);
+
   paddedSize = {
     w: size.w + padLeft + padRight,
     h: size.h + padTop + padBottom
