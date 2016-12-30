@@ -319,9 +319,6 @@
               }
 
             } else {
-
-				alert("IconSize: " + iconSize.w)
-				
               tmpCtx.save();
               tmpCtx.globalCompositeOperation = 'source-over';
               imagelib.drawing.copy(tmpCtx, IMAGE_RESOURCES[backgroundShape + '-' + density + '-mask'], iconSize);
@@ -338,8 +335,6 @@
                   w: foreCtx.canvas.width,
                   h: foreCtx.canvas.height
                 };
-
-				alert("ForeSize:" + foreSize)
 
                 if (values['foreColor'].alpha) {
                   var tmpCtx3 = imagelib.drawing.context(foreSize);
