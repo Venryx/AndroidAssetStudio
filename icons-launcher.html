@@ -319,6 +319,9 @@
               }
 
             } else {
+
+				alert("IconSize: " + iconSize.w)
+				
               tmpCtx.save();
               tmpCtx.globalCompositeOperation = 'source-over';
               imagelib.drawing.copy(tmpCtx, IMAGE_RESOURCES[backgroundShape + '-' + density + '-mask'], iconSize);
